@@ -22,7 +22,6 @@ var writeToFile = function (text) {
       return csv
     })
   }).then(function (csv) {
-    console.log(csv)
     return fs.appendFileAsync(fileName, csv)
   })
 }
@@ -32,7 +31,7 @@ repl.start({
   prompt: '> ',
   eval: function (text, context, filename, callback) {
     return writeToFile(text).then(function () {
-      return callback(null, 'ok')
+      return callback(null)
     })
   }
 })
