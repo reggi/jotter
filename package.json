@@ -1,6 +1,6 @@
 {
   "name": "jotter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Terminal app to take notes.",
   "main": "index.js",
   "scripts": {
